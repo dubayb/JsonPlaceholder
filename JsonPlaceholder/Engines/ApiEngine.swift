@@ -9,12 +9,6 @@
 import Foundation
 
 struct ApiEngine {
-//    var apiDelegate:ApiDelegate!
-//    var apiBase: [ApiBase]!
-//    init(apiDelegate:ApiDelegate) {
-//        self.apiDelegate = apiDelegate
-////        getJsonData()
-//    }
     
     func getJsonData<A>(completion:@escaping ( ApiDataResult<A> ) -> Void ){
         let url = URL(string: "https://jsonplaceholder.typicode.com/photos")
@@ -23,10 +17,8 @@ struct ApiEngine {
                 let jsonDecoder = JSONDecoder()
                 let apiBase = try jsonDecoder.decode([ApiBase].self, from: data!)
                 completion(ApiDataResult.Value(apiBase))
-//                self.apiDelegate.handleData(result: apiBase)
             } catch {
                 completion(ApiDataResult.Error(error.localizedDescription))
-//                self.apiDelegate.handleError(error: error)
             }
             
         }
@@ -38,8 +30,3 @@ enum ApiDataResult<T> {
     case Value([ApiBase])
     case Error(String)
 }
-//protocol ApiDelegate {
-//    func handleData(result:[ApiBase])
-//    func handleError(error:Error)
-//}
-

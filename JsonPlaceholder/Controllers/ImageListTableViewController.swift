@@ -20,8 +20,9 @@ class ImageListTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         loadData()
-       
+        self.title = "Json Placeholder"
     }
+    
     func loadData(){
         apiEngine.getJsonData { (result : ApiDataResult<Any>) in
             DispatchQueue.main.async {

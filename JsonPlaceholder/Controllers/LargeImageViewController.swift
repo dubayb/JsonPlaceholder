@@ -9,16 +9,21 @@
 import UIKit
 
 class LargeImageViewController: UIViewController {
-
+    
     @IBOutlet var largeImageView: UIImageView!
+    
     var singleData : ApiBase!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        fillImageView()
+        fillData()
     }
-    func fillImageView(){
-        guard let imageUrl = singleData.thumbnailUrl, let photoID = singleData.id else { return }
+    
+    func fillData(){
+        guard let imageUrl = singleData.thumbnailUrl,
+            let photoID = singleData.id else { return }
+        self.title = singleData.title
         largeImageView.loadImageUsingCache(withUrl: imageUrl, photoId: photoID)
     }
-
+    
 }

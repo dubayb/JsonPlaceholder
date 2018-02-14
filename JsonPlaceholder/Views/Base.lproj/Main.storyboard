@@ -34,7 +34,7 @@
                                                 <constraint firstAttribute="width" secondItem="lzc-qt-dFx" secondAttribute="height" multiplier="1:1" id="s2o-HL-4WE"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0dy-jj-aUG">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0dy-jj-aUG">
                                             <rect key="frame" x="138" y="12" width="225" height="118.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -69,7 +69,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0HO-hK-rnk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="76" y="-80.50974512743629"/>
+            <point key="canvasLocation" x="-283" y="-93"/>
         </scene>
         <!--Large Image View Controller-->
         <scene sceneID="H35-JS-Rl6">
@@ -98,7 +98,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rGz-iR-TK3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="844" y="-84.107946026986511"/>
+            <point key="canvasLocation" x="114" y="-94"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="0Az-UD-ljz">

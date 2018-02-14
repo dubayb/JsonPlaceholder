@@ -1,5 +1,11 @@
 
-
+//
+//  ApiBase.swift
+//  JsonPlaceholder
+//
+//  Created by Dubay, Bryan on 2/14/18.
+//  Copyright © 2018 Bryan Dubay. All rights reserved.
+//
 import Foundation
 struct ApiBase : Codable {
 	let albumId : Int?
